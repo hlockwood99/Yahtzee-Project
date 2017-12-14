@@ -9,7 +9,9 @@ class Dice():
 		self.Four = int(random.randrange(0,7))
 		self.Five = int(random.randrange(0,7))
 	def DiceRoll():
-		counter = 0
+		diceArray = [self.One, self.Two, self.Three, self.Four, self.Five]
+
+
 		q = str(input('Would you like to roll the dice? (y/n) ')) 
 		if q == 'y':
 	

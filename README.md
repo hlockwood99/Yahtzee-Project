@@ -7,7 +7,7 @@ The objective of the game is to score points by rolling five dice to make certai
 
 ### Plan
 
-There is a Dice class as well as a Yahtzee class. The Dice class ... The Yahtzee class contains the conditions of Yahtzee, such as three of a kind, four of a kind, small straight, large straight, Yahtzee, etc.
+There is a Dice class as well as a Yahtzee class. The Dice class will generate the numbers for each die and will provide the final values to be used for scoring. The Yahtzee class contains the conditions of Yahtzee, such as three of a kind, four of a kind, small straight, large straight, Yahtzee, etc.
 
 Henry will be working on the Dice class and Michael will be working on the Yahtzee class.
 
