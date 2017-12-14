@@ -2,7 +2,7 @@ import random
 
 class Dice():
 
-	def dice(selfn ,num):
+	def dice(self ,num):
 		dice = []
 		for i in range num:
 			dice.append(random.randint(1,6))
