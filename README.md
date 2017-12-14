@@ -6,11 +6,12 @@ The objective of the game is to score points by rolling five dice to make certai
 ![Yahtzee!](https://casualgamerevolution.com/sites/default/files/images/games/5_dice.jpg)
 
 ### Plan
-We plan to make a function that has an array of all the possible faces of a die, and in that function return the frenquency of a face among the current set of dice.
 
-Next, we will make a new array of all of the counts of the die. We can then sort of the array and test for the conditions of Yahtzee, such as three of a kind, four of a kind, small straight, large straight, Yahtzee, etc.
+There is a Dice class as well as a Yahtzee class. The Dice class ... The Yahtzee class contains the conditions of Yahtzee, such as three of a kind, four of a kind, small straight, large straight, Yahtzee, etc.
 
-Lastly, there will be a testing class where we will run the functions and we can check to see if the code works!
+Henry will be working on the Dice class and Michael will be working on the Yahtzee class.
 
-Michael plans to write the conditions and Henry plans to make the array, which counts the frequency of the dice and sets the conditions, such as the number of rolls. Together, they will write the testing class.
+Lastly, there will be a runner file where the user will be able to play the Yahtzee game and will be asked questions such as, "Would you like to roll again?" or "What die(s) would you like to keep?"
+
+
 
