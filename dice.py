@@ -15,9 +15,6 @@ class Dice:
 		diceRolled.append(self.Four)
 		diceRolled.append(self.Five)
 		print(diceRolled)
-		firstHold = input('Would you like to hold any of these dice? y/n ')
-			if firstHold == 'y':
-				diceHold = input('Which die would you like to hold')
 mydie = Dice()
 mydie.DiceRoll()
 
