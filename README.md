@@ -11,7 +11,6 @@ There is a Dice class as well as a Yahtzee class. The Dice class will generate t
 
 Henry will be working on the Dice class and Michael will be working on the Yahtzee class.
 
-Lastly, there will be a runner file where the user will be able to play the Yahtzee game and will be asked questions such as, "Would you like to roll again?" or "What die(s) would you like to keep?"
-
+Lastly, there will be a runner file where the user will be able to play the Yahtzee game and will be asked questions such as, "Would you like to roll again?" or "What die(s) would you like to keep?" The two will collaborate together to make this class.
 
 
