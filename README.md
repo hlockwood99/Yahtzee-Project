@@ -7,11 +7,10 @@ The objective of the game is to score points by rolling five dice to make certai
 
 ### Plan
 
-There is a Dice class as well as a Yahtzee class. The Dice class will generate the numbers for each die and will provide the final values to be used for scoring. The Yahtzee class contains the conditions of Yahtzee, such as three of a kind, four of a kind, small straight, large straight, Yahtzee, etc. This class will take care of...
+There is a Dice class as well as a Yahtzee class. The Dice class will generate the numbers for each die and will provide the final values to be used for scoring. The Yahtzee class contains the conditions of Yahtzee, such as three of a kind, four of a kind, small straight, large straight, Yahtzee, etc.
 
 Henry will be working on the Dice class and Michael will be working on the Yahtzee class.
 
-Lastly, there will be a runner file where the user will be able to play the Yahtzee game and will be asked questions such as, "Would you like to roll again?" or "What die(s) would you like to keep?"
-
+Lastly, there will be a runner file where the user will be able to play the Yahtzee game and will be asked questions such as, "Would you like to roll again?" or "What die(s) would you like to keep?" The two will collaborate together to make this class.
 
 
