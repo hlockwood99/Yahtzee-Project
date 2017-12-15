@@ -12,3 +12,6 @@ class Dice():
 		raw_input("Press ENTER")
 		roll1 = self.dice(5)
 		return roll1
+
+	def second_roll(self):
+		
