@@ -1,4 +1,4 @@
-import Dice
+from Dice import dice
 import Yahtzee
 import random
 
@@ -11,3 +11,5 @@ while response != 'y' and response != 'n':
 	elif response == 'n':
 		print('Come again soon!')
 		break
+
+	
