@@ -1,5 +1,7 @@
+#Yahtzee class: checks the conditions
 class Yahtzee:
 
+	#Count and add only a certain number, such as three twos
 	def singledigits(dice, num):
 		score = 0
 		for i in dice:
@@ -7,6 +9,7 @@ class Yahtzee:
 				score += int(num)
 			return score
 
+	#Three kinds of the same dice
 	def threeofakind(dice):
 		score = 0
 		for i in dice:
@@ -16,6 +19,7 @@ class Yahtzee:
 			else:
 				return score
 
+	#Four kinds of the same dice
 	def fourofakind(dice):
 		score = 0
 		for i in dice:
@@ -29,6 +33,7 @@ class Yahtzee:
 	# 	score = 0
 	# 	if 
 
+	#A small straight
 	def smallstraight(dice):
 		score = 0
 		dice = str(sorted(dice))
@@ -36,6 +41,7 @@ class Yahtzee:
 			score = 30
 			return score
 
+	#A large straight
 	def largestraight(dice):
 		score = 0
 		dice = str(sorted(dice))
@@ -43,6 +49,7 @@ class Yahtzee:
 			score = 40
 			return score
 
+	#Five of the same dice (Yahtzee)
 	def yahtzee(dice):
 		score = 0
 		for i in dice:
@@ -52,18 +59,10 @@ class Yahtzee:
 			else:
 				return score
 
+	#Score total of all 5 Dice
 	def chance(dice):
 		score = sum(dice)
 		return score
-
-
-
-
-
-
-
-
-
 
 
 
