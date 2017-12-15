@@ -29,9 +29,22 @@ class Yahtzee:
 			else:
 				return score
 
-	# def fullhouse(dice):
-	# 	score = 0
-	# 	if 
+	#Full house where there are two of the same number and 3 of the same number 
+	#(but different from the two of the same number)
+	def fullhouse(dice):
+		score = 0
+		temp = []
+		for i in dice:
+			temp.append(i)
+			temp.sort()
+		if temp[0] == temp[1] and temp[2] == temp[3] and temp[3] == temp[4]:
+			score = 25
+			return score
+		elif temp[0] == temp[1] and temp[1] == temp[2] and temp[3] == temp[4]:
+			score = 25
+			return score
+		else:
+			return score
 
 	#A small straight
 	def smallstraight(dice):
