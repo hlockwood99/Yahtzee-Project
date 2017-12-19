@@ -33,3 +33,11 @@ while response != 'y' and response != 'n':
 	elif response == 'n':
 		print('Come again soon!')
 		break
+
+Yahtzeetool = Yahtzee()
+
+score = Yahtzeetool.singledigits() + Yahtzeetool.threeofakind() + Yahtzeetool.fourofakind()
++ Yahtzeetool.fullhouse() + Yahtzeetool.smallstraight() + Yahtzeetool.largestraight()
++ Yahtzeetool.yahtzee() + Yahtzeetool.chance()
+
+print('FINAL SCORE: ' + score)
