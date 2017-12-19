@@ -8,10 +8,13 @@ while response != 'y' and response != 'n':
 	print('Try again. Please type [y] or [n]')
 	response = input('Hi there, friend! Would you like to play Yahtzee? [y] or [n]')
 	if response == 'y':
-		Dice()
+		break
 	elif response == 'n':
 		print('Come again soon!')
-		break
+		quit()
+
+Yahtzeetool = Yahtzee()
+roll = Dice()
 
 #The player plays thirteen rounds, like in the actual game.
 for i in range 13:
@@ -73,9 +76,6 @@ for i in range 13:
 			+ Yahtzeetool.yahtzee(dice) + Yahtzeetool.chance(dice)
 			finalscore.append(score)
 			#Automatically goes back to round 1
-
-Yahtzeetool = Yahtzee()
-roll = Dice()
 
 totalscore = sum(finalscores)
 print('FINAL SCORE: ' + totalscore)
