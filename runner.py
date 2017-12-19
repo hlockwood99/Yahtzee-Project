@@ -14,10 +14,10 @@ while response != 'y' and response != 'n':
 
 for i in range 13:
 	dice = []
-	try1 = input('Would you like to roll the dice? (Try 1 - you pass your turn)')
+	try1 = input('Would you like to roll the dice? [y] or [n] (Try 1 - if [n], you pass your turn)')
 	while response != 'y' and response != 'n':
 		print('Try again. Please type [y] or [n]')
-		try1 = input('Would you like to roll the dice? (Try 1 - you pass your turn)')
+		try1 = input('Would you like to roll the dice? [y] or [n] (Try 1 - if [n], you pass your turn)')
 		if response == 'y':
 			dice = roll.DiceRoll()
 		elif response == 'n':
@@ -28,10 +28,10 @@ for i in range 13:
 			finalscore.append(score)
 			continue
 
-	try2 = input('Would you like to reroll the dice? (Try 2) ')
+	try2 = input('Would you like to reroll the dice? [y] or [n] (Try 2) ')
 	while response != 'y' and response != 'n':
 		print('Try again. Please type [y] or [n]')
-		try2 = input('Would you like to reroll the dice? (Try 2) ')
+		try2 = input('Would you like to reroll the dice? [y] or [n] (Try 2) ')
 		if response == 'y':
 			roll.DiceRoll()
 		elif response == 'n':
@@ -42,10 +42,10 @@ for i in range 13:
 			finalscore.append(score)
 			continue
 
-	try3 = input('Would you like to reroll the dice? (Try 3) ')
+	try3 = input('Would you like to reroll the dice? [y] or [n] (Try 3) ')
 	while response != 'y' and response != 'n':
 		print('Try again. Please type [y] or [n]')
-		try3 = input('Would you like to reroll the dice? (Try 3) ')
+		try3 = input('Would you like to reroll the dice? [y] or [n] (Try 3) ')
 		if response == 'y':
 			roll.DiceRoll()
 		elif response == 'n':
@@ -55,7 +55,6 @@ for i in range 13:
 			+ Yahtzeetool.yahtzee(dice) + Yahtzeetool.chance(dice)
 			finalscore.append(score)
 			continue
-
 
 Yahtzeetool = Yahtzee()
 roll = Dice()
