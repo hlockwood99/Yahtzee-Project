@@ -15,17 +15,6 @@ class Dice:
 		diceRolled.append(self.Four)
 		diceRolled.append(self.Five)
 		print(diceRolled)
-		firstHold = input('Would you like to hold any of these dice? y/n ')
-		if firstHold == 'y':
-			diceHold1 = input('Would you like to hold the first die, '+str(self.One)+'?')
-			diceHold2 = input('Would you like to hold the second die, '+self.Two+'?'))
-			diceHold3 = input('Would you like to hold the third die, '+self.Three+'?'))
-			diceHold4 = input('Would you like to hold the fourth die, '+self.Four+'?'))
-			diceHold5 = input('Would you like to hold teh fifth die, '+self.Five+'?'))
-
-
-		elif firstHold == 'n':
-			print('Okay, now you will score the dice you have')
 mydie = Dice()
 mydie.DiceRoll()
 
@@ -34,3 +23,20 @@ mydie.DiceRoll()
 
 # Yahtzee
 # Dice
+
+
+'''
+firstHold = input('Would you like to hold any of these dice? y/n ')
+
+if firstHold == 'y':
+			diceHold1 = input('Would you like to hold the first die, '+str(self.One)+'?')
+			diceHold2 = input('Would you like to hold the second die, '+str(self.Two)+'?')
+			diceHold3 = input('Would you like to hold the third die, '+str(self.Three)+'?')
+			diceHold4 = input('Would you like to hold the fourth die, '+str(self.Four)+'?')
+			diceHold5 = input('Would you like to hold teh fifth die, '+str(self.Five)+'?')
+
+
+		elif firstHold == 'n':
+			print('Okay, now you will score the dice you have')
+
+'''
