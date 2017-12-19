@@ -15,8 +15,7 @@ class Dice:
 		diceRolled.append(self.Four)
 		diceRolled.append(self.Five)
 		return diceRolled
-mydie = Dice()
-mydie.DiceRoll()
+
 
 
 # ⚀ ⚁ ⚂ ⚃ ⚄ ⚅
