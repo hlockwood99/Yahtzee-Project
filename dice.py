@@ -14,7 +14,7 @@ class Dice:
 		diceRolled.append(self.Three)
 		diceRolled.append(self.Four)
 		diceRolled.append(self.Five)
-		print(diceRolled)
+		return diceRolled
 mydie = Dice()
 mydie.DiceRoll()
 
