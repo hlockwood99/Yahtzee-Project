@@ -62,6 +62,9 @@ for i in range(13):
 		+ Yahtzeetool.yahtzee(dice) + Yahtzeetool.chance(dice)
 		finalscore.append(score)
 		#Go back to round 1
+		outsidevariable = True
+
+	if outsidevariable == True:
 		continue
 
 	try3 = input('Would you like to reroll the dice? [y] or [n] (Try 3) ')
@@ -79,6 +82,11 @@ for i in range(13):
 		finalscore.append(score)
 		#Automatically goes back to round 1
 		continue
+		outsidevariable = True
+
+	if outsidevariable == True:
+		continue
+
 
 totalscore = sum(finalscores)
 print('FINAL SCORE: ' + totalscore)
