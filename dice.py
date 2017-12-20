@@ -15,10 +15,11 @@ class Dice:
 	'''
 	def DiceRoll(self):
 		print(self.diceRolled)
-		choice = input('What would you like to roll again? Type NONE to move on. ')
-		choiceA = choice.replace(' ','').split(',')
-		for i in choiceA:
-			self.diceRolled[i] = random.randrange(1,6)
+		choice = [int(x) for x in input('What would you like to roll again? Type NONE to move on. ').split()]
+		choice1 = [elem.strip() for elem in choice]
+		print(choice1)
+		for x in choice1:
+			self.diceRolled[x] = random.randrange(1,6)
 		print(self.diceRolled)
 		return self.diceRolled
 mydie = Dice()
