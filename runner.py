@@ -46,4 +46,5 @@ print('FINAL SCORE: ' + str(totalscore))
 
 
 #Unable to figure out issue with code being iterable, but otherwise it should work. It was most likely an issue with calling the array, just because
-#Wtih this specific error, that would make the most sense.
+#Wtih this specific error, that would make the most sense. Sorry! We tried out best to make it work, but
+#We couldn't figure it out by the end.
