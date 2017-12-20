@@ -30,5 +30,5 @@ Lastly, there will be a runner file where the user will be able to play the Yaht
 	* chance class, which adds up the total of all 5 die.
 
 * __Runner Class__
-	* The runner class asks the user whether or not he or she would like to play Yahtzee. It will ask if the player would like to roll the die, and then he or she would be given a final score of the round.
+	* The runner class asks the user whether or not he or she would like to play Yahtzee. It will ask if the player would like to roll the die, and then he or she would be given a final score for the round.
 
