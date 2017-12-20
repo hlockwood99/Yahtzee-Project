@@ -33,7 +33,7 @@ elif try2 == 'n':
 	score = Yahtzeetool.singledigits(dice) + Yahtzeetool.threeofakind(dice) + Yahtzeetool.fourofakind(dice)+ Yahtzeetool.fullhouse(dice) + Yahtzeetool.smallstraight(dice) + Yahtzeetool.largestraight(dice)+ Yahtzeetool.yahtzee(dice) + Yahtzeetool.chance(dice)
 	finalscores.append(score)
 	#Go back to round 1
-	print('SCORE: ' + score)
+	print('SCORE: ' + score) x
 
 
 #The player plays thirteen rounds, like in the actual game.
