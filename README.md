@@ -15,11 +15,11 @@ Lastly, there will be a runner file where the user will be able to play the Yaht
 
 ### Classes
 
-* *Dice Class*
-	* __init__ class, which gives the player the starting values for the first dice roll. This information is given in an array, and is then manipulated within the array for the rest of the code.
-	* Includes DiceRoll function, takes the array from the __init__ and then askes whether the user wants to reroll. Regardless of the answer, the user will be asked twice, just to be sure. The class ends by returning a final dice array, which holds the values which will be scored.
+* __Dice Class__
+	* init class, which gives the player the starting values for the first dice roll. This information is given in an array, and is then manipulated within the array for the rest of the code.
+	* Includes DiceRoll function, takes the array from the init and then askes whether the user wants to reroll. Regardless of the answer, the user will be asked twice, just to be sure. The class ends by returning a final dice array, which holds the values which will be scored.
 
-* Yahtzee Class
+* __Yahtzee Class__
 	* singledigits class, which adds up the single digits of the list (such as 2 3's, 2 4's, etc.)
 	* threeofakind class, which adds up all of the digits of the list if there is 3 or more of a certain value
 	* fourofakind class, which adds up all of the digits of the list if there is 4 or more of a certain value
