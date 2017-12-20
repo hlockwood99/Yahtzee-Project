@@ -4,80 +4,91 @@ class Dice:
 	def __init__(self):
 		self.diceRolled = []
 		for i in range(0,5):
-			self.diceRolled.append(int(random.randrange(1,6)))
+			self.diceRolled.append(int(random.randrange(1,7)))
 
-	'''
-		self.One = int(random.randrange(1,6))
-		self.Two = int(random.randrange(1,6))
-		self.Three = int(random.randrange(1,6))
-		self.Four = int(random.randrange(1,6))
-		self.Five = int(random.randrange(1,6))
-	'''
+			#This part makes the first roll for the player and is the array which the code manipulates later on.
+
 	def DiceRoll(self):
+		# It was difficult to try and use condensed code to write this part, so the if statements walk the player through rerolling the dice.
+		# It may look messy, but I had a lot of trouble trying to get the condensed version to work. 
 		print(self.diceRolled)
-		choice = [int(x) for x in input('What would you like to roll again? Type NONE to move on. ').split()]
-		choice1 = [elem.strip() for elem in choice]
-		print(choice1)
-		for x in choice1:
-			self.diceRolled[x] = random.randrange(1,6)
-		print(self.diceRolled)
+		firstHold = input('Would you like to reroll any of these dice? y/n ')
+		if firstHold == 'y':
+			diceHold1 = input('Would you like to reroll the first die, '+str(self.diceRolled[0])+'? (y/n) ')
+			if diceHold1 == 'y':
+				self.diceRolled[0] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+			diceHold2 = input('Would you like to reroll the second die, '+str(self.diceRolled[1])+'? (y/n) ')
+			if diceHold2 == 'y':
+				self.diceRolled[1] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+			diceHold3 = input('Would you like to reroll the third die, '+str(self.diceRolled[2])+'? (y/n) ')
+			if diceHold3 == 'y':
+				self.diceRolled[2] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+			diceHold4 = input('Would you like to reroll the fourth die, '+str(self.diceRolled[3])+'? (y/n) ')
+			if diceHold4 == 'y':
+				self.diceRolled[3] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+			diceHold5 = input('Would you like to reroll the fifth die, '+str(self.diceRolled[4])+'? (y/n) ')
+			if diceHold5 == 'y':
+				self.diceRolled[4] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+
+		# After each statement, the player either choses "Reroll", in which case, a new random number between 1 and 6 will be generated.
+		# The other option the player has is to "Hold" and the player is able to hold a dice for one reroll, but then reroll it the next
+		else:
+			print("Okay, these are the die you have: "+str(self.diceRolled))
+		print('These are the dice you have now '+str(self.diceRolled)+'.') 
+
+		secHold = input("Would you like to reroll any of these dice? (y/n) ")
+		if secHold == 'y':
+			dice2Hold1 = input('Would you like to reroll the first die, '+str(self.diceRolled[0])+'? (y/n) ')
+			if dice2Hold1 == 'y':
+				self.diceRolled[0] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+			dice2Hold2 = input('Would you like to reroll the second die, '+str(self.diceRolled[1])+'? (y/n) ')
+			if dice2Hold2 == 'y':
+				self.diceRolled[1] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+			dice2Hold3 = input('Would you like to reroll the third die, '+str(self.diceRolled[2])+'? (y/n) ')
+			if dice2Hold3 == 'y':
+				self.diceRolled[2] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+			dice2Hold4 = input('Would you like to reroll the fourth die, '+str(self.diceRolled[3])+'? (y/n) ')
+			if dice2Hold4 == 'y':
+				self.diceRolled[3] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+			dice2Hold5 = input('Would you like to reroll the fifth die, '+str(self.diceRolled[4])+'? (y/n) ')
+			if dice2Hold5 == 'y':
+				self.diceRolled[4] = int(random.randrange(1,7))
+				print(self.diceRolled)
+			else:
+				print('Holding')
+		else:
+			print('Here are the dice that you will score for this round:')
+			print(self.diceRolled)
+# This is the end of the if statement and reroll code, and so the final array for the dice is returned by the function
 		return self.diceRolled
+
 mydie = Dice()
 mydie.DiceRoll()
 
-
-
-'''
-		print(diceRolled)
-		choice2 = input('What would you like to roll again? Type NONE to move on. ')
-		choice2 = choice2.replace(' ','').split(',')
-		for i in choice2:
-			diceRolled[i] = random.randrange(1,6)
-'''
-
-'''
-		diceRolled.append(self.One)
-		diceRolled.append(self.Two)
-		diceRolled.append(self.Three)
-		diceRolled.append(self.Four)
-		diceRolled.append(self.Five)'''
-
-'''
-		firstHold = input('Would you like to reroll any of these dice? y/n ')
-		if firstHold == 'y':
-			diceHold1 = input('Would you like to reroll the first die, '+str(self.One)+'? (y/n) ')
-			if diceHold1 == 'y':
-				diceRolled.pop([0])
-				self.One = int(random.randrange(1,6))
-				diceRolled.insert(0,self.One)
-			diceHold2 = input('Would you like to reroll the second die, '+str(self.Two)+'? (y/n) ')
-			if diceHold2 == 'y':
-				self.Two = int(random.randrange(1,6))
-			diceHold3 = input('Would you like to reroll the third die, '+str(self.Three)+'? (y/n) ')
-			if diceHold3 == 'y':
-				self.Three = int(random.randrange(1,6))
-			diceHold4 = input('Would you like to reroll the fourth die, '+str(self.Four)+'? (y/n) ')
-			if diceHold4 == 'y':
-				self.Four = int(random.randrange(1,6))
-			diceHold5 = input('Would you like to reroll the fifth die, '+str(self.Five)+'? (y/n) ')
-			if diceHold5 == 'y':
-				self.Five = int(random.randrange(1,6))
-
-
-		elif firstHold == 'n':
-			print('Okay, now you will score the dice you have')
-'''
-
-
-# ⚀ ⚁ ⚂ ⚃ ⚄ ⚅
-
-# Yahtzee
-# Dice
-
-
-'''
-
-
-
-
-'''
