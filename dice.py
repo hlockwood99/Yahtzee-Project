@@ -1,5 +1,6 @@
 import random
 class Dice:
+	#The constructor for the class - makes a list of 5 values, like the 5 dice in Yahtzee.
 	def __init__(self):
 		self.diceRolled = []
 		for i in range(0,5):
@@ -8,10 +9,11 @@ class Dice:
 			#This part makes the first roll for the player and is the array which the code manipulates later on.
 
 	def DiceRoll(self):
-		# It was difficult to try and use condensed code to write this part, so the if statements walk the player through rerolling the dice.
-		# It may look messy, but I had a lot of trouble trying to get the condensed version to work. 
+		#It was difficult to try and use condensed code to write this part, so the if statements walk the player through rerolling the dice.
+		#It may look messy, but I had a lot of trouble trying to get the condensed version to work. 
 		print(self.diceRolled)
 		firstHold = input('Would you like to reroll any of these dice? y/n ')
+		#Asks if user wants to reroll certain die, one by one.
 		if firstHold == 'y':
 			diceHold1 = input('Would you like to reroll the first die, '+str(self.diceRolled[0])+'? (y/n) ')
 			if diceHold1 == 'y':
@@ -50,6 +52,7 @@ class Dice:
 			print("Okay, these are the die you have: "+str(self.diceRolled))
 		print('These are the dice you have now '+str(self.diceRolled)+'.') 
 
+		# Player has option to change some of their numbers by rerollign them.
 		secHold = input("Would you like to reroll any of these dice? (y/n) ")
 		if secHold == 'y':
 			dice2Hold1 = input('Would you like to reroll the first die, '+str(self.diceRolled[0])+'? (y/n) ')
