@@ -92,7 +92,3 @@ totalscore = sum(finalscores)
 print('FINAL SCORE: ' + totalscore)
 
 
-
-
-
-
