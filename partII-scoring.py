@@ -12,8 +12,8 @@ class Yahtzee:
 	#Three kinds of the same dice
 	def threeofakind(dice):
 		score = 0
-		for i in dice:
-			if dice.count(i) >= 3:
+		for i in diceRolled:
+			if diceRolled.count(i) >= 3:
 				score = sum(dice)
 				return score
 			else:
@@ -22,8 +22,8 @@ class Yahtzee:
 	#Four kinds of the same dice
 	def fourofakind(dice):
 		score = 0
-		for i in dice:
-			if dice.count(i) >= 4:
+		for i in diceRolled:
+			if diceRolled.count(i) >= 4:
 				score = sum(dice)
 				return score
 			else:
@@ -34,7 +34,7 @@ class Yahtzee:
 	def fullhouse(dice):
 		score = 0
 		temp = []
-		for i in dice:
+		for i in diceRolled:
 			temp.append(i)
 			temp.sort()
 		if temp[0] == temp[1] and temp[2] == temp[3] and temp[3] == temp[4]:

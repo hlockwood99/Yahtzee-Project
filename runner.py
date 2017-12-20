@@ -27,14 +27,16 @@ if try2 == 'y':
 	roll.DiceRoll()
 #If no, the code will check what conditions the values in "dice" meets, such as 
 #full house.
-elif try2 == 'n':
+
 	print('Calculating score... ')
 	#Adds up the scores that satisfy certain conditions.
-	score = Yahtzeetool.singledigits(dice) + Yahtzeetool.threeofakind(dice) + Yahtzeetool.fourofakind(dice)+ Yahtzeetool.fullhouse(dice) + Yahtzeetool.smallstraight(dice) + Yahtzeetool.largestraight(dice)+ Yahtzeetool.yahtzee(dice) + Yahtzeetool.chance(dice)
+	score = Yahtzeetool.singledigits(roll.diceRolled) + Yahtzeetool.threeofakind(roll.diceRolled) + Yahtzeetool.fourofakind(roll.diceRolled)+ Yahtzeetool.fullhouse(roll.diceRolled) + Yahtzeetool.smallstraight(roll.diceRolled) + Yahtzeetool.largestraight(roll.diceRolled)+ Yahtzeetool.yahtzee(roll.diceRolled) + Yahtzeetool.chance(roll.diceRolled)
 	finalscores.append(score)
 	#Go back to round 1
 	print('SCORE: ' + score)
-
+else:
+	print('Okay, goodbye')
+	exit()
 
 #The player plays thirteen rounds, like in the actual game.
 
@@ -43,3 +45,5 @@ totalscore = sum(finalscores)
 print('FINAL SCORE: ' + str(totalscore))
 
 
+#Unable to figure out issue with code being iterable, but otherwise it should work. It was most likely an issue with calling the array, just because
+#Wtih this specific error, that would make the most sense.
