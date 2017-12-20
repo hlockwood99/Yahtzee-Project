@@ -18,7 +18,7 @@ class Dice:
 		choice = input('What would you like to roll again? Type NONE to move on. ')
 		choiceA = choice.replace(' ','').split(',')
 		for i in choiceA:
-			self.diceRolled[i] = random.randrange(1,6)
+			self.diceRolled[int(i)] = random.randrange(1,6)
 		print(self.diceRolled)
 		return self.diceRolled
 mydie = Dice()
