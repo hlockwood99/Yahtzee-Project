@@ -77,6 +77,3 @@ class Yahtzee:
 		score = sum(dice)
 		return score
 
-#
-
-
