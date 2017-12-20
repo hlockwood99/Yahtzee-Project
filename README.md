@@ -29,3 +29,6 @@ Lastly, there will be a runner file where the user will be able to play the Yaht
 	* yahtzee class, which gives a score of 50 if all of the dice have the same number
 	* chance class, which adds up the total of all 5 die.
 
+* __Runner Class__
+	* The runner class asks the user whether or not he or she would like to play Yahtzee. It will ask if the player would like to roll the die, and then he or she would be given a final score of the round.
+
