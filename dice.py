@@ -87,6 +87,3 @@ class Dice:
 			print(self.diceRolled)
 # This is the end of the if statement and reroll code, and so the final array for the dice is returned by the function
 		return self.diceRolled
-
-mydie = Dice()
-mydie.DiceRoll()
